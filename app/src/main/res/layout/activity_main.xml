@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleY="1"
+    android:translationY="0dp">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#ededed"
+        android:baselineAligned="false"
+        android:padding="22dp"
+        android:scaleY="1"
+        android:translationY="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Switch
+            android:id="@+id/classifierSwitch"
+            android:layout_width="287dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleY="1"
+            android:text="@string/classifier"
+            android:translationY="0dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Switch
+            android:id="@+id/soundSwitch"
+            android:layout_width="287dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleY="1"
+            android:text="@string/sound"
+            android:translationY="0dp" />
+
+
+        <Switch
+            android:id="@+id/modelSwitch"
+            android:layout_width="287dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:checked="true"
+            android:scaleY="1"
+            android:text="@string/accelerometer"
+            android:translationY="0dp" />
+
+        <TableRow
+            android:id="@+id/title_row"
+            android:layout_width="373dp"
+            android:layout_height="wrap_content"
+            android:padding="22dp"
+            android:scaleY="1"
+            android:textAlignment="center"
+            android:translationY="0dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:text="@string/activity"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:translationY="0dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:text="@string/probability"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:translationY="0dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/walking_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="22dp"
+            android:scaleY="1"
+            android:translationY="0dp">
+
+            <TextView
+                android:id="@+id/walking_title"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:text="@string/first"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="0dp" />
+
+            <TextView
+                android:id="@+id/walking_prob"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:translationY="0dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/jogging_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="22dp"
+            android:scaleY="1"
+            android:translationY="0dp">
+
+            <TextView
+                android:id="@+id/jogging_title"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:text="@string/second"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="0dp" />
+
+            <TextView
+                android:id="@+id/jogging_prob"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:translationY="0dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/sitting_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="22dp"
+            android:scaleY="1"
+            android:translationY="0dp">
+
+            <TextView
+                android:id="@+id/sitting_title"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:text="@string/third"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="0dp" />
+
+            <TextView
+                android:id="@+id/sitting_prob"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:translationY="0dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/standing_row"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="22dp"
+            android:scaleY="1"
+            android:translationY="0dp">
+
+            <TextView
+                android:id="@+id/standing_title"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:text="@string/forth"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="0dp" />
+
+            <TextView
+                android:id="@+id/standing_prob"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:translationY="0dp" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/log_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="22dp"
+            android:scaleY="1"
+            android:translationY="0dp">
+
+            <TextView
+                android:id="@+id/log_row_title"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:text="@string/log"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:translationY="0dp" />
+
+            <TextView
+                android:id="@+id/log"
+                android:layout_weight="1"
+                android:scaleY="1"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:translationY="0dp" />
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
